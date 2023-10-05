@@ -1,0 +1,21 @@
+.menuFonte
+{
+  font-family: 'Mooli', sans-serif;
+  font-size: 15px;
+}
+
+.corFonteMenu
+{
+  color: white;
+  font-weight: bold;
+}
+
+.corNav
+{
+  background-color: #011F45;
+}
+
+.corPagina
+{
+  background-color: #011F45;
+}
