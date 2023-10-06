@@ -118,7 +118,7 @@
 
   <br>
 
-<div style="background-color: darkblue;" class="container">
+<div style="background-color: darkblue; border-radius: 10px;" class="container">
   <div class="row">
     <div class="col-md-6" style="background-color: white;">
       
@@ -147,43 +147,47 @@
           </div>
     
           <div class="row">
-    
-            <div class="col-md-6 col-sm-12 mb-3">
-              <label class="form-label">Cidade:</label><br>
-              <input type="text" class="form-control">
-            </div>
-            <div class="col-md-3 col-sm-12 mb-3">
-              <label class="form-label">Estado:</label><br>
-              <select class="form-select">
-                <option></option>
-                <option>MG</option>
-                <option>RJ</option>
-                <option>SP</option>
-              </select>
-            </div>
-            <div class="col-md-3 col-sm-12 mb-3">
-              <label class="form-label">Cep:</label><br>
-              <input type="tel" class="form-control">
-            </div>
+
+            <div class="col-md-1"></div>
             
+            <div class="col-md-10 col-sm-12 mb-3">
+              <label class="form-label">E-mail:</label><br>
+              <input type="text" class="form-control" required>
+              <div class="invalid-feedback">
+                Campo obrigatório!
+              </div>
+            </div>
+
+            <div class="col-md-1"></div>
+                    
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-1"></div>
             
+            <div class="col-md-10 col-sm-12 mb-3">
+              <label class="form-label">Senha:</label><br>
+              <input type="text" class="form-control" required>
+              <div class="invalid-feedback">
+                Campo obrigatório!
+              </div>
+            </div>
+
+            <div class="col-md-1"></div>
+                    
           </div>
     
-          <div class="row">
-    
-            <div class="col-12 mb-3">
-              <label class="form-label">Mensagem:</label>
-              <textarea class="form-control"></textarea>
-            </div>
+          <div class="row mt-3">
             
-          </div>
-    
-          <div class="row">
-            
-            <div class="col-12">
+            <div class="col-md-4"></div>
+
+            <div class="col-6">
               <button type="submit" class="btn btn-danger"><i class="bi bi-send"></i> Enviar</button>
               <button type="reset" class="btn btn-danger"><i class="bi bi-x-circle"></i> Limpar</button>
             </div>
+
+            <div class="col-md-2"></div>
     
           </div>
     
