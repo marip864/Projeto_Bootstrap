@@ -55,7 +55,35 @@
     .corFonteMenu:hover{
       color: #7B89FF;
     }
-   
+
+    .efeito 
+    {
+      background: rgba(60, 98, 253, 0.35);
+      box-shadow: 0 8px 32px 0 rgba(114, 123, 255, 0.37);
+      border-radius: 20px;
+      backdrop-filter: blur( 10px );
+      -webkit-backdrop-filter: blur( 10px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      width: 80%;
+    }
+
+    h6 a
+    {
+      color: white;
+      text-decoration: none;
+      
+    }
+
+    h6 a:hover
+    {
+      color: #e1f9ff;
+    }
+
+    hr{
+      color: rgba(60, 98, 253, 0.35);;
+    }
+  
 	</style>
 
 </head>
@@ -68,105 +96,242 @@
 	<nav class="navbar navbar-expand-lg corNav">
   <div class="container-fluid">
     <a class="navbar-brand corFonteMenu" href="index.html"><image><img src="ovelha.png" height="40px"></image></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 menuFonte">
-        <li class="nav-item">
-          <a class="nav-link active" style="color: white; font-weight: bold;" aria-current="page" href="#">Início</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle corFonteMenu" href="sobre.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Sobre
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="introducao.html">Introdução</a></li>
-            <li><a class="dropdown-item" href="objetivos.html">Objetivos</a></li>
-            <li><a class="dropdown-item" href="desenvolvimento.html">Desenvolvimento</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="resultados.html">Resultados esperados</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link corFonteMenu" href="sono.html">Seu Sono</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link corFonteMenu" href="posts.html">Posts</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link corFonteMenu" href="contato.html">Contato</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link corFonteMenu" href="quiz.html">Quiz</a>
-        </li>
-        
-      </ul>
-
-      <ul class="d-flex">
-        <li class="entrar"><a style="font-weight: bold;" class="nav-link" href="entrar.html">Entrar</a></li>
-        <li class="entrar"><a style="font-weight: bold;" class="nav-link" href="cadastrar.html">Cadastre-se</a></li>
-      </ul>
-      
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline" style="background-color: rgba(255,255,255,0.5); color: white;" type="submit"><i class="bi bi-search"></i></button>
-      </form>
-    </div>
-  </div>
   </nav>
-
-  <div class="container">
-    <div class="row">
-        <div class="col-md-6" style="background-color: white;">
-            
-        </div>
-        <div class="col-md-6">
-
-        </div>
-    </div>
-  </div>
-
-  <br>
-
-<div style="background-color: darkblue;" class="container-fluid">
+<div class="container efeito">
   <div class="row">
-    <div class="col-md-8">
-      
+    <div class="col-md-6" style="color:white;">
+
+      <h6 class="display-6 mt-4 mb-4"><i class="bi bi-person-check-fill"></i> Cadastre-se! </h6>
+
+      <div class="container corContainer">
+
+        <div class="row mb-2">
+    
+          <form class="needs-validation" novalidate>
+          <div class="row">
+
+            <div class="col-md-1"></div>
+            
+            <div class="col-md-10 col-sm-12 mb-3">
+              <label class="form-label">Nome:</label><br>
+              <input type="text" class="form-control" required style="border-color: #40CDFF;">
+              <div class="invalid-feedback" style="color: #D8F8FF;">
+                Campo obrigatório!
+              </div>
+            </div>
+
+            <div class="col-md-1"></div>
+                    
+          </div>
+    
+          <div class="row">
+
+            <div class="col-md-1"></div>
+            
+            <div class="col-md-10 col-sm-12 mb-3">
+              <label class="form-label">E-mail:</label><br>
+              <input type="text" class="form-control" required style="border-color: #40CDFF;">
+              <div class="invalid-feedback" style="color: #D8F8FF;">
+                Campo obrigatório!
+              </div>
+            </div>
+
+            <div class="col-md-1"></div>
+                    
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-1"></div>
+            
+            <div class="col-md-10 col-sm-12 mb-3">
+              <label class="form-label">Senha:</label><br>
+              <input type="text" class="form-control" required style="border-color: #40CDFF;">
+              <div class="invalid-feedback" style="color: #D8F8FF;">
+                Campo obrigatório!
+              </div>
+            </div>
+
+            <div class="col-md-1"></div>
+                    
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-1"></div>
+            
+            <div class="col-md-5 col-sm-12 mb-3">
+              <label class="form-label">Nascimento:</label><br>
+              <input type="date" class="form-control" required style="border-color: #40CDFF;">
+              <div class="invalid-feedback" style="color: #D8F8FF;">
+                Campo obrigatório!
+              </div>
+            </div>
+
+            <div class="col-md-5 col-sm-12 mb-3">
+              <label class="form-label">Série:</label><br>
+              <input type="number" class="form-control" required style="border-color: #40CDFF;">
+              <div class="invalid-feedback" style="color: #D8F8FF;">
+                Campo obrigatório!
+              </div>
+            </div>
+
+            <div class="col-md-1"></div>
+                    
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-1"></div>
+            
+            <div class="col-md-10 col-sm-12 mb-3">
+              <label class="form-label">Curso:</label><br>
+              <select class="form-select">
+                <option></option>
+                <option>Agrimensura</option>
+                <option>Desenvolvimento de Sistemas</option>
+                <option>Edificações</option>
+                <option>Enfermagem</option>
+                <option>Mecânica</option>
+                <option>Qualidade</option>
+              </select>
+            </div>
+              <div class="invalid-feedback" style="color: #D8F8FF;">
+                Campo obrigatório!
+              </div>
+            </div>
+
+            <div class="col-md-1"></div>
+                    
+          </div>
+        </form>
+    </div></div>
+    <div class="col-md-6" style="color:white;">
+      <div class="container corContainer">
+        
+        <div class="row">
+          <hr><hr><hr><hr><hr><br>
+        <form class="needs-validation" novalidate>
+          <div class="row">
+
+            <div class="col-md-1"></div>
+            
+            <div class="col-md-10 col-sm-12 mb-3">
+              <label class="form-label">Nome:</label><br>
+              <input type="text" class="form-control" required style="border-color: #40CDFF;">
+              <div class="invalid-feedback" style="color: #D8F8FF;">
+                Campo obrigatório!
+              </div>
+            </div>
+
+            <div class="col-md-1"></div>
+                    
+          </div>
+    
+          <div class="row">
+
+            <div class="col-md-1"></div>
+            
+            <div class="col-md-10 col-sm-12 mb-3">
+              <label class="form-label">E-mail:</label><br>
+              <input type="text" class="form-control" required style="border-color: #40CDFF;">
+              <div class="invalid-feedback" style="color: #D8F8FF;">
+                Campo obrigatório!
+              </div>
+            </div>
+
+            <div class="col-md-1"></div>
+                    
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-1"></div>
+            
+            <div class="col-md-10 col-sm-12 mb-3">
+              <label class="form-label">Senha:</label><br>
+              <input type="text" class="form-control" required style="border-color: #40CDFF;">
+              <div class="invalid-feedback" style="color: #D8F8FF;">
+                Campo obrigatório!
+              </div>
+            </div>
+
+            <div class="col-md-1"></div>
+                    
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-1"></div>
+            
+            <div class="col-md-5 col-sm-12 mb-3">
+              <label class="form-label">Nascimento:</label><br>
+              <input type="date" class="form-control" required style="border-color: #40CDFF;">
+              <div class="invalid-feedback" style="color: #D8F8FF;">
+                Campo obrigatório!
+              </div>
+            </div>
+
+            <div class="col-md-5 col-sm-12 mb-3">
+              <label class="form-label">Série:</label><br>
+              <input type="number" class="form-control" required style="border-color: #40CDFF;">
+              <div class="invalid-feedback" style="color: #D8F8FF;">
+                Campo obrigatório!
+              </div>
+            </div>
+
+            <div class="col-md-1"></div>
+                    
+          </div>
+
+
+          <div class="row mt-4">
+
+            <div class="col-md-1"></div>
+            <br>
+            <div class="col-md-10 col-sm-12 mb-3"> 
+                <button type="submit" class="btn btn-primary">Entrar</button>
+            </div>
+
+            <div class="col-md-1"></div>
+                    
+          </div>
+        </form>
+        </div>
+        
+      </div>
+        
     </div>
-    <div class="col-md-4">
-      
+    
+        
+      </div>
     </div>
   </div>
 </div>
-<div>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 
-  <path fill="#1917B0" fill-opacity="1" d="M0,256L48,240C96,224,192,192,288,176C384,160,480,160,576,165.3C672,171,768,181,864,
-  176C960,171,1056,149,1152,122.7C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,
-  864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+<script type="text/javascript">
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
 
-  <path fill="#12117D" fill-opacity="1" d="M0,160L34.3,138.7C68.6,117,137,75,206,58.7C274.3,43,343,53,411,90.7C480,128,549,192,617,
-  224C685.7,256,754,256,823,240C891.4,224,960,192,1029,181.3C1097.1,171,1166,181,1234,202.7C1302.9,224,1371,256,1406,272L1440,288L1440,
-  320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,
-  480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+const forms = document.querySelectorAll('.needs-validation')
 
-  <path fill="#2D1794" fill-opacity="1" d="M0,256L40,245.3C80,235,160,213,240,197.3C320,181,400,171,480,154.7C560,139,640,117,720,
-  96C800,75,880,53,960,80C1040,107,1120,181,1200,192C1280,203,1360,149,1400,122.7L1440,96L1440,320L1400,320C1360,320,1280,320,1200,
-  320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,
-  320Z"></path>
-  
-  </svg>
-  
-</div>
+// Loop over them and prevent submission
+Array.from(forms).forEach(form => {
+  form.addEventListener('submit', event => {
+    if (!form.checkValidity()) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
 
-  
+    form.classList.add('was-validated')
+  }, false)
+})
+})()
 
-	
+</script>
 
-
-
-  <!--fim container cursos-->
 
 </body>
 </html>
