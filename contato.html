@@ -52,6 +52,11 @@
     .corFonteMenu:hover{
       color: #7B89FF;
     }
+
+    a{
+      text-decoration: none;
+      color: white;
+    }
    
 	</style>
 
@@ -124,47 +129,70 @@
       <div class="row">
 
         <div class="col-md-6 col-sm-12 mb-3">
-          <label class="form-label">Nome:</label><br>
-          <input type="text" class="form-control" required style="border-color: #40CDFF;">
+          
+          <div class="form-floating mb-3">
+            <input type="text" required class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" style="color: #838493;">Nome</label>
+          
+
           <div class="invalid-feedback" style="color: #D8F8FF;">
             Campo obrigatório!
-          </div>
+          </div></div>
+            
         </div>
         <div class="col-md-4 col-sm-12 mb-3">
-          <label class="form-label">Email:</label><br>
-          <input type="email" class="form-control" required style="border-color: #40CDFF;">
+          
+          <div class="form-floating mb-3">
+            <input type="email" required class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" style="color: #838493;">E-mail</label>
+          
+
           <div class="invalid-feedback" style="color: #D8F8FF;">
             Campo obrigatório!
-          </div>
+          </div></div>
         </div>
         <div class="col-md-2 col-sm-12 mb-3">
-          <label class="form-label">Telefone:</label><br>
-          <input type="tel" class="form-control" required style="border-color: #40CDFF;">
+          <div class="form-floating mb-3">
+            <input type="tel" required class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" style="color: #838493;">Telefone</label>
+          
+
           <div class="invalid-feedback" style="color: #D8F8FF;">
             Campo obrigatório!
-          </div>
+          </div></div>
+          
         </div>
     
       </div>
 
       <div class="row">
 
-        <div class="col-md-6 col-sm-12 mb-3">
-          <label class="form-label">Cidade:</label><br>
-          <input type="text" class="form-control">
+        <div class="col-md-5 col-sm-12 mb-3">
+          <div class="form-floating mb-3">
+            <input type="text" required class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" style="color: #838493;">Escola</label>
+          
+
+          <div class="invalid-feedback" style="color: #D8F8FF;">
+            Campo obrigatório!
+          </div></div>
         </div>
         <div class="col-md-3 col-sm-12 mb-3">
-          <label class="form-label">Estado:</label><br>
-          <select class="form-select">
-            <option></option>
-            <option>MG</option>
-            <option>RJ</option>
-            <option>SP</option>
-          </select>
+          <div class="form-floating">
+            <select class="form-select" id="floatingSelectGrid">
+              <option selected>Selecione uma opção</option>
+              <option value="1">Cadastro</option>
+              <option value="2">Pesquisa</option>
+              <option value="3">Acompanhamento do sono</option>
+            </select>
+            <label for="floatingSelectGrid" style="color: #838493;">Dúvida sobre...</label>
+          </div>
         </div>
-        <div class="col-md-3 col-sm-12 mb-3">
-          <label class="form-label">Cep:</label><br>
-          <input type="tel" class="form-control">
+        <div class="col-md-4 col-sm-12 mb-3">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" style="color: #838493;">Cidade</label>
+          </div>
         </div>
         
         
@@ -173,8 +201,14 @@
       <div class="row">
 
         <div class="col-12 mb-3">
-          <label class="form-label">Mensagem:</label>
-          <textarea class="form-control"></textarea>
+          <div class="form-floating">
+            <textarea class="form-control" required placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2" style="color:#838493;">Mensagem</label>
+          
+
+          <div class="invalid-feedback" style="color: #D8F8FF;">
+            Campo obrigatório!
+          </div></div>
         </div>
         
       </div>
@@ -182,29 +216,8 @@
       <div class="row">
         
         <div class="col-12">
-          <!-- Button trigger modal -->
-<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  <i class="bi bi-send-arrow-up-fill"></i>Enviar
-</button>
+          <button type="submit" class="btn btn-danger"><i class="bi bi-send"></i> Enviar</button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Aviso importante!</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <h5>A mensagem será enviada e logo será respondida. <br> Você tem certeza que deseja continuar?</h5>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Confirmar</button>
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancelar</button>
-      </div>
-    </div>
-  </div>
-</div>
           
           <button type="reset" class="btn btn-danger"><i class="bi bi-x-circle"></i> Limpar</button>
         </div>
@@ -217,48 +230,30 @@
 		
 	</div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    
-      <path fill="#1917B0" fill-opacity="1" d="M0,256L48,240C96,224,192,192,288,176C384,160,480,160,576,165.3C672,171,768,181,864,
-      176C960,171,1056,149,1152,122.7C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,
-      864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-    
-      <path fill="#12117D" fill-opacity="1" d="M0,160L34.3,138.7C68.6,117,137,75,206,58.7C274.3,43,343,53,411,90.7C480,128,549,192,617,
-      224C685.7,256,754,256,823,240C891.4,224,960,192,1029,181.3C1097.1,171,1166,181,1234,202.7C1302.9,224,1371,256,1406,272L1440,288L1440,
-      320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,
-      480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
-    
-      <path fill="#2D1794" fill-opacity="1" d="M0,256L40,245.3C80,235,160,213,240,197.3C320,181,400,171,480,154.7C560,139,640,117,720,
-      96C800,75,880,53,960,80C1040,107,1120,181,1200,192C1280,203,1360,149,1400,122.7L1440,96L1440,320L1400,320C1360,320,1280,320,1200,
-      320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,
-      320Z"></path>
-      
-      </svg>
-
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
-  <script type="text/javascript">
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-  (() => {
-    'use strict'
+<script type="text/javascript">
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  const forms = document.querySelectorAll('.needs-validation')
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+const forms = document.querySelectorAll('.needs-validation')
 
-  // Loop over them and prevent submission
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
+// Loop over them and prevent submission
+Array.from(forms).forEach(form => {
+  form.addEventListener('submit', event => {
+    if (!form.checkValidity()) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
 
-      form.classList.add('was-validated')
-    }, false)
-  })
-  })()
+    form.classList.add('was-validated')
+  }, false)
+})
+})()
 
-  </script>
+</script>
  
 
   <br>

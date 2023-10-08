@@ -131,6 +131,25 @@
   </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: black;">Já preencheu todos os campos?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="color: rgb(113, 106, 106);">
+        A mensagem será enviada e logo será respondida. <br> Você tem certeza que deseja enviá-la?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><a href="index.html">Confirmar</a></button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 
@@ -152,8 +171,15 @@
   
 </div>
 
-  
+<script type="text/javascript">
+  const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
 
+myModal.addEventListener('shown.bs.modal', () => {
+myInput.focus()
+})
+
+</script>
 	
 
 
