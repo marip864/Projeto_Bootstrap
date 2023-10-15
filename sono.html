@@ -103,6 +103,38 @@
   </div>
   </nav>
 
+  <button type="button" class="btn btn-primary" id="liveToastBtn">Quero me cadastrar!</button>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="ovelha.png" height="20px" class="rounded me-2" alt="...">
+      <strong class="me-auto">Durma mais, viva mais</strong>
+      <small>Now</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body" style="background-color: #e5f7fc; color: rgb(0, 0, 0);">
+      Acesse a página de cadastro na aba superior!
+    </div>
+  </div>
+</div>
+
+  <script text="javascript">
+
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
+    
+    const toastElList = document.querySelectorAll('.toast')
+    const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl, option))
+  </script>
+
   <br>
 
   
