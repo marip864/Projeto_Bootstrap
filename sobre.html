@@ -62,7 +62,7 @@
 
   <!--início navbar-->
 
-  <nav class="navbar navbar-expand-lg corNav">
+  <nav class="navbar navbar-expand-lg corNav" style="width: 99%;">
   <div class="container-fluid">
     <a class="navbar-brand corFonteMenu" href="index.html"><image><img src="ovelha.png" height="40px"></image></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -195,7 +195,7 @@
 
   <br><br>
 
-  <div class="container" style="background-color: #2f4f79; border-radius: 20px;">
+  <div class="container" style="background-color: #2f4f79; border-radius: 20px; width: 99%;">
     <br><br>
   <div class="row">
     <div class="col-1"></div>
@@ -227,12 +227,12 @@
   <br><br>
 
   <!-- Button trigger modal -->
-  <div class="row">
+  <div class="row" style="width: 99%;">
     <div class="col-md-1"></div>
 
     <div class="col-md-4">
 
-<button type="button" class="container btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="container btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: 15px;">
   Erro na visualização?
 </button>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -245,12 +245,16 @@
       <div class="modal-body">
         <form>
           <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Usuário:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
+            <div class="form-floating mb-3">
+              <input type="text" required class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput" style="color: #838493;">Usuário</label>
+            </div>
           <div class="mb-3">
-            <label for="message-text" class="col-form-label">Mensagem:</label>
-            <textarea class="form-control" id="message-text"></textarea>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" required placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2" style="color:#838493;">Mensagem</label>
+            </div>
+          </div>
           </div>
         </form>
       </div>
@@ -269,7 +273,7 @@
 
     <div class="col-md-4">
 
-      <button type="button" class="container btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+      <button type="button" class="container btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" style="margin-left: 15px;">
         Termo de Autorização e Consentimento
       </button>
             <!-- Modal -->
