@@ -103,6 +103,7 @@
 
         <div class="row mb-2" style="color:white;">
           <h6 class="display-6 mt-4 mb-4"><i class="bi bi-person-check-fill"></i> Entre em sua conta! </h6>
+          
     
           <form class="needs-validation" novalidate>
           <div class="row">
@@ -110,12 +111,13 @@
             <div class="col-md-1"></div>
             
             <div class="col-md-10 col-sm-12 mb-3">
-              <label class="form-label">Nome:</label><br>
-              <input type="text" class="form-control" required style="border-color: #40CDFF;">
+              <div class="form-floating mb-3">
+                <input type="text" required class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" style="color: #838493;">Nome</label>
               <div class="invalid-feedback" style="color: #D8F8FF;">
                 Campo obrigatório!
               </div>
-            </div>
+            </div></div>
 
             <div class="col-md-1"></div>
                     
@@ -126,12 +128,13 @@
             <div class="col-md-1"></div>
             
             <div class="col-md-10 col-sm-12 mb-3">
-              <label class="form-label">E-mail:</label><br>
-              <input type="text" class="form-control" required style="border-color: #40CDFF;">
+              <div class="form-floating mb-3">
+                <input type="email" required class="form-control" id="floatingInput1" placeholder="name@example.com">
+                <label for="floatingInput1" style="color: #838493;">E-mail</label>
               <div class="invalid-feedback" style="color: #D8F8FF;">
                 Campo obrigatório!
               </div>
-            </div>
+            </div></div>
 
             <div class="col-md-1"></div>
                     
@@ -142,12 +145,13 @@
             <div class="col-md-1"></div>
             
             <div class="col-md-10 col-sm-12 mb-3">
-              <label class="form-label">Senha:</label><br>
-              <input type="text" class="form-control" required style="border-color: #40CDFF;">
+              <div class="form-floating mb-3">
+                <input type="password" required class="form-control" id="floatingInput2" placeholder="name@example.com">
+                <label for="floatingInput2" style="color: #838493;">Senha</label>
               <div class="invalid-feedback" style="color: #D8F8FF;">
                 Campo obrigatório!
               </div>
-            </div>
+            </div></div>
 
             <div class="col-md-1"></div>
                     
